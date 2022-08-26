@@ -58,7 +58,7 @@ pub trait InsertImage {
         };
         // The following lines use commands: see p643 (Table A.1) for more info
         // `q` = Save graphics state
-        content.operations.push(Operation::new("q", vec![]));
+        // content.operations.push(Operation::new("q", vec![]));
         // `cm` = Concatenate matrix to current transformation matrix
         content.operations.push(Operation::new(
             "cm",
@@ -77,7 +77,7 @@ pub trait InsertImage {
             vec![Name(image_name.as_bytes().to_vec())],
         ));
         // `Q` = Restore graphics state
-        content.operations.push(Operation::new("Q", vec![]));
+        // content.operations.push(Operation::new("Q", vec![]));
 
         let content_data = Content::encode(&content)?;
 
