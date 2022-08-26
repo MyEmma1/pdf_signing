@@ -14,13 +14,13 @@ repository = "https://github.com/ralpha/pdf_signing"
 
 [dependencies]
 log = "0.4.14"
-lopdf = { version = "0.27.0", features = [
+lopdf = { version = "0.28.0", features = [
     "chrono_time",
     "nom_parser",
 ], default-features = false, git = "https://github.com/J-F-Liu/lopdf", branch = "master" }
 png = "0.17.2"
 rand = "0.8.3"
-sha2 = "0.9.8"
+sha2 = "0.10.2"
 base64 = "0.13.0"
 chrono = "0.4.19"
 serde = { version = "1.0.126", features = ["derive"] }
